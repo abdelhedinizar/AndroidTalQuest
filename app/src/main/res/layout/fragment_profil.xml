@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autolabel="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/blue"
+            app:expandedTitleTextAppearance="@style/toolbarStyle"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/bgheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/navigation_background1"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MyToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:popupTheme="@style/AppTheme"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+         >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="11dp"
+                android:paddingLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.mikepenz.materialdrawer.view.BezelImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_personimage"
+                        app:layout_anchor="@id/MyAppbar" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Mouelhi Seif"
+                        android:textColor="#121212"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/ic_dialog_map" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Country :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/countryProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/countryEdit"
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/ic_menu_myplaces" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="PostCode :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/postCodeProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="3021" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/postCodeEdit"
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10pt"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginRight="10pt"
+                    android:layout_marginTop="5pt"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@drawable/job" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Job title:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/jobTitleProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="Developer" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/jobTitleEdit"
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/ic_input_get" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Sector :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sectorProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="informatique,internet and telecom" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/sectorEdit"
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/btn_star_big_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="company :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/companyProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="Enis" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+                        <ImageView
+                            android:id="@+id/companyEdit"
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10pt"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginRight="10pt"
+                    android:layout_marginTop="5pt"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/btn_star_big_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="experience :"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/experienceProfil"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10pt"
+                        android:text="" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+                        <ImageView
+                            android:id="@+id/experienceEdit"
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/ic_dialog_map" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Skills :"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/skillsEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="40dp"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/skillsEdit"
+                            android:layout_width="12pt"
+                            android:layout_height="12pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.dpizarro.autolabel.library.AutoLabelUI
+                    android:id="@+id/label_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    autolabel:icon_cross="@drawable/cross"
+                    autolabel:label_background_res="@color/default_background_label"
+                    autolabel:label_clickable="true"
+                    autolabel:label_padding="@dimen/label_padding"
+                    autolabel:show_cross="true"
+                    autolabel:text_color="@android:color/white"
+                    autolabel:text_size="@dimen/label_title_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10pt"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginRight="10pt"
+                    android:layout_marginTop="5pt"
+                    android:background="@drawable/line" />
+
+                <Button
+                    android:id="@+id/addresume"
+                    android:layout_width="match_parent"
+                    android:layout_height="14pt"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginRight="10pt"
+                    android:background="@drawable/profil_button_style"
+                    android:gravity="center"
+                    android:text="Add your resume"
+                    android:textColor="@color/jaune"
+                    android:textSize="8pt" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="14pt"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginRight="10pt"
+                    android:background="@drawable/profil_button_style"
+                    android:gravity="center"
+                    android:text="See your recommendations"
+                    android:textColor="@color/jaune"
+                    android:textSize="8pt" />
+
+
+            </LinearLayout>
+            </ScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10pt"
+                android:layout_marginLeft="10pt"
+                android:layout_marginRight="10pt"
+                android:layout_marginTop="5pt"
+                android:background="@drawable/line" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFFFF">
+                <EditText
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/signUpUserName"
+                    android:textColorHint="#EFEFEF"
+                    android:hint="Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFFFF">
+                <EditText
+                    android:textColor="@android:color/white"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/signUpMail"
+                    android:textColorHint="#EFEFEF"
+                    android:hint="E-Mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_vpn_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFFFF">
+                <EditText
+                    android:textColor="@android:color/white"
+                    android:id="@+id/signUpPassword"
+                    android:textColorHint="#EFEFEF"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_vpn_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFFFF">
+                <EditText
+                    android:textColor="@android:color/white"
+                    android:id="@+id/signUpConfirmPassword"
+                    android:textColorHint="#EFEFEF"
+                    android:inputType="textPassword"
+                    android:hint="confirm Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/step2Button"
+        android:layout_marginRight="5pt"
+        android:layout_marginBottom="5pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/ic_navigate_next"
+        app:backgroundTint="@color/blue"/>
+
+
+
+
+</RelativeLayout>

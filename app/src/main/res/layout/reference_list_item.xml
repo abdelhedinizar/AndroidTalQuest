@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="2sp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <com.mikepenz.materialdrawer.view.BezelImageView
+                        android:id="@+id/referPerson"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20pt"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/anonymose" />
+
+                    <TextView
+                        android:id="@+id/referPersonName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="\????? ??????"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_flech" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10pt"
+                    android:orientation="vertical">
+
+                    <com.mikepenz.materialdrawer.view.BezelImageView
+                        android:id="@+id/referByPerson"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="20pt"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_personimage" />
+                    <TextView
+                        android:id="@+id/referByName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="\????? ??????"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10pt"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Experience : 6 mois en forsyslab et 2 mois en sifast"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/skillsLineaireLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+<!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="#000"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="java"
+                    android:textColor="#FFF"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="#000"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Android"
+                    android:textColor="#FFF"
+                    android:textSize="15dp" />
+-->
+            </LinearLayout>
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="100pt"
+                android:layout_height="18pt"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5pt"
+                android:layout_marginRight="5pt"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Accept"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

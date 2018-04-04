@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "569027255561",
+    "project_id": "talquest-318f8"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569027255561:android:9a75e0823e4dedfe",
+        "android_client_info": {
+          "package_name": "com.forsyslab.talquest10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569027255561-0elt416h411927latc3qetkh6rqon8o8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.forsyslab.talquest10",
+            "certificate_hash": "3BECD1E236AF16738F615F9BFBED2793BC768C9A"
+          }
+        },
+        {
+          "client_id": "569027255561-k2uf2ov5m7bq74pdpfi66kpssp78q6uk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDspf_Y-zQHXibBtObgNWlhExb8nn41o7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

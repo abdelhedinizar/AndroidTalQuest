@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginBottom="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.meg7.widget.CircleImageView
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:adjustViewBounds="true"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/myphoto" />
+
+        <TextView
+            android:layout_width="50pt"
+            android:layout_height="20pt"
+            android:layout_marginLeft="10pt"
+            android:gravity="center_vertical"
+            android:text="Guillaume Fric" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox1"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.meg7.widget.CircleImageView
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:adjustViewBounds="true"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/myphoto" />
+
+        <TextView
+            android:layout_width="50pt"
+            android:layout_height="20pt"
+            android:layout_marginLeft="10pt"
+            android:gravity="center_vertical"
+            android:text="Clement Kopp" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginBottom="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.meg7.widget.CircleImageView
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:adjustViewBounds="true"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/myphoto" />
+
+        <TextView
+            android:layout_width="50pt"
+            android:layout_height="20pt"
+            android:layout_marginLeft="10pt"
+            android:gravity="center_vertical"
+            android:text="Jean Safar" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2"
+                />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.meg7.widget.CircleImageView
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:adjustViewBounds="true"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/myphoto" />
+
+        <TextView
+            android:layout_width="50pt"
+            android:layout_height="20pt"
+            android:layout_marginLeft="10pt"
+            android:gravity="center_vertical"
+            android:text="Hugues Seureau" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox3"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginBottom="55dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/blue"
+            app:expandedTitleTextAppearance="@style/toolbarStyle"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/bgheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/navigation_background1"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MyToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingLeft="10pt">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.mikepenz.materialdrawer.view.BezelImageView
+                        android:id="@+id/myphoto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="10pt"
+                        android:layout_marginLeft="10pt"
+                        android:layout_marginRight="20pt"
+                        android:layout_marginTop="20pt"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/myphoto" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/companyName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20pt"
+                            android:gravity="center"
+                            android:text="Forsyslab"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="14pt"
+                            android:layout_marginLeft="5pt"
+                            android:layout_marginRight="5pt"
+                            android:layout_marginTop="2pt"
+                            android:background="@drawable/profil_button_style"
+                            android:gravity="center"
+                            android:text="my job leads"
+                            android:textColor="@color/jaune"
+                            android:textSize="8pt" />
+
+                        <TextView
+                            android:id="@+id/noEmp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="employees"
+                            android:textColor="@color/blue" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/ic_dialog_map" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="5pt"
+                        android:text="Description :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/descriptionProfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15pt"
+                        android:text="Si LinkedIn et les agences de recrutement classiques vous semblent de nos jours inefficaces et incertaines, TalQuest a décidé d'avoir une toute autre approche.
+Bien que la startup mère est basée à New York aux États-Unis, TalQuest s'installe maintenant en Tunisie et offre aux Tunisiens ses services." />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/ic_dialog_map" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Creation date :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/creationDateProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="01/01/2016" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/creationDateEdit"
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/ic_dialog_map" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Country :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/countryProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/ic_menu_myplaces" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="PostCode :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/postCodeProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="3021" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10pt"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginRight="10pt"
+                    android:layout_marginTop="5pt"
+                    android:background="@drawable/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@drawable/job" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Web site:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/webSiteProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="www.forsyslab.com" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/ic_input_get" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Facebook account :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/facebookProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="www.facebook.com/forsyslab" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/btn_star_big_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Google+ account :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/googleProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="www.facebook.com/forsyslab" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/btn_star_big_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Twitter account :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/twitterProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10pt"
+                        android:layout_height="10pt"
+                        android:layout_marginRight="10pt"
+                        android:src="@android:drawable/btn_star_big_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Linkedin account :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/linkedInProfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5pt"
+                        android:text="" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="10pt"
+                            android:layout_height="10pt"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10pt"
+                            android:src="@android:drawable/ic_menu_edit" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10pt"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginRight="10pt"
+                    android:layout_marginTop="5pt"
+                    android:background="@drawable/line" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

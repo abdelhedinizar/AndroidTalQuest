@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/jaune</item>
+    </style>
+
+    <style name="toolbarStyle" parent="TextAppearance.AppCompat.Caption">
+
+        <item name="android:textColorPrimary">@color/jaune</item>
+        <item name="android:textColorSecondary">@color/blueciel</item>
+        <item name="android:color">@color/jaune</item>
+
+    </style>
+<style name="materialProgress" parent="Material.Drawable.CircularProgress">
+    <item name="cpd_strokeColor">@color/blueciel</item>
+    <item name="cpd_strokeSecondaryColor">@android:color/transparent</item>
+</style>
+</resources>

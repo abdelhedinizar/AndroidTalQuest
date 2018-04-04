@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/navigation_background3"
+    tools:context="com.forsyslab.talquest10.WelcomeActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+    <!--    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10pt"
+            android:text="@string/app_name"
+            android:textColor="@color/blueciel"
+            android:textSize="20pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="100pt"
+            android:layout_height="90pt"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+-->
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/numberProgressBar"
+            android:layout_width="140pt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            custom:progress_max="100"
+            custom:progress_reached_bar_height="1.5dp"
+
+            custom:progress_reached_color="@color/blueciel"
+            custom:progress_text_color="@color/blueciel"
+            custom:progress_text_offset="1dp"
+            custom:progress_text_size="10sp"
+            custom:progress_text_visibility="visible"
+            custom:progress_unreached_bar_height="0.75dp"
+
+            custom:progress_unreached_color="#CCCCCC" />
+        <!--
+            <com.lusfold.spinnerloading.SpinnerLoading
+                android:id="@+id/spinner_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                />
+        -->
+    </LinearLayout>
+    <!-- <com.rey.material.widget.ProgressView
+           android:layout_width="48dp"
+           android:layout_height="48dp"
+           app:pv_autostart="true"
+           app:pv_circular="true"
+           app:pv_progressStyle="@style/materialProgress"
+           app:pv_progressMode="indeterminate"
+           android:id="@+id/progressView" />
+   -->
+
+</RelativeLayout>

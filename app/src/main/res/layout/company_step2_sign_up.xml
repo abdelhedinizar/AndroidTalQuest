@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_person_pin" />
+
+            <TextView
+                android:layout_width="50pt"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textColor="@android:color/white" />
+            <!--  <android.support.design.widget.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColorHint="#FFFFFF">
+                  <EditText
+                      android:id="@+id/signUpCountry"
+                      android:textColorHint="#EFEFEF"
+                      android:hint="Country"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content" />
+
+
+
+
+                       </android.support.design.widget.TextInputLayout>-->
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                app:ms_background_color="#AAFFFFFF"
+                app:ms_text_color="@color/blue"
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10pt"
+                android:layout_marginRight="10pt" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_person_pin" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFFFF">
+
+                <EditText
+
+                    android:id="@+id/signUpPostCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="PostCode"
+                    android:inputType="number"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#EFEFEF" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_person_pin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:text="Select your logo"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/signUpLogo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50pt"
+                android:src="@drawable/person_dialog" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_person_pin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:text="Select your Cover Photo"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/signUpCoverPhoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="26pt"
+                android:src="@drawable/person_dialog" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/step3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="5pt"
+        android:layout_marginRight="5pt"
+        app:backgroundTint="@color/blue"
+        app:srcCompat="@drawable/ic_navigate_next" />
+</RelativeLayout>

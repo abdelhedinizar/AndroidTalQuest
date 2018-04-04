@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+
+        android:layout_width="120pt"
+        android:layout_height="120pt"
+        android:layout_centerHorizontal="true">
+<ImageView
+    android:id="@+id/signUpPhoto"
+    android:src="@drawable/person_dialog"
+    android:layout_width="120pt"
+    android:layout_height="120pt"
+    />
+        <TextView
+            android:gravity="center"
+            android:background="#80000000"
+            android:textColor="#FFFFFF"
+            android:text="Update photo"
+            android:layout_width="match_parent"
+            android:layout_height="10pt"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/step5Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="5pt"
+        android:layout_marginRight="5pt"
+        app:backgroundTint="@color/blue"
+        app:srcCompat="@drawable/ic_navigate_next" />
+
+</RelativeLayout>

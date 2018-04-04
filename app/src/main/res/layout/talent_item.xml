@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/two_line_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:minHeight="72dp"
+    android:paddingEnd="?listPreferredItemPaddingRight"
+    android:paddingLeft="?listPreferredItemPaddingLeft"
+    android:paddingRight="?listPreferredItemPaddingRight"
+    android:paddingStart="?listPreferredItemPaddingLeft"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <com.mikepenz.materialdrawer.view.BezelImageView
+            android:id="@+id/talentImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_personimage" />
+
+        <LinearLayout
+            android:id="@+id/lines_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_toEndOf="@+id/talentImage"
+            android:layout_toRightOf="@+id/talentImage"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/first_text_view"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="First Line"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/second_text_view"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Second Line" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/connectTalent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_note"/>
+
+        <!-- Can be replaced by a widget -->
+
+    </RelativeLayout>

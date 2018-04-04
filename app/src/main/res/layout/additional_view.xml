@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Nizar Abdelhedi"
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@drawable/textview_style"
+            android:text="Java"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:background="@drawable/textview_style"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Android"
+            android:textSize="15sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:background="@drawable/textview_style"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="C++"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/refer"
+        android:textColor="#FFFFFF"
+        android:text="Refer"
+        android:background="@drawable/sign_in_button_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>
+</LinearLayout>

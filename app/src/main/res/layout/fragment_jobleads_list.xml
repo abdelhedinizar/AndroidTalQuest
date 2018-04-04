@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+<!--
+    <com.ramotion.foldingcell.FoldingCell xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/folding_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="5pt"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+
+        folding-cell:additionalFlipsCount="2"
+        folding-cell:animationDuration="1000"
+        folding-cell:backSideColor="@android:color/white"
+        folding-cell:cameraHeight="30">
+
+        <FrameLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10pt"
+                    android:background="@color/blue">
+
+                    <TextView
+                        android:id="@+id/jobTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15pt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Offre 1"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/company_cover">
+
+                    <TextView
+                        android:id="@+id/salary1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15pt"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="10pt"
+                        android:layout_marginLeft="5pt"
+                        android:text="33000$"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="15pt"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10pt"
+                        android:text="11000$"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="15pt"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10pt"
+                        android:layout_marginRight="5pt"
+                        android:text="1"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="15pt"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5pt"
+                        android:text="salary"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="15pt"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Reward choosen"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="15pt"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5pt"
+                        android:text="Experience"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginTop="5pt"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sector"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/jobSector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:text="Informatique, internet et télécom" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5pt"
+                    android:layout_marginLeft="20pt"
+                    android:layout_marginRight="20pt"
+                    android:layout_marginTop="5pt"
+                    android:background="@drawable/line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginTop="4pt"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company description"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="10pt"
+                    android:id="@+id/company_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Offre 1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5pt"
+                    android:layout_marginLeft="20pt"
+                    android:layout_marginRight="20pt"
+                    android:layout_marginTop="5pt"
+                    android:background="@drawable/line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginTop="4pt"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mession description"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="10pt"
+                    android:id="@+id/mission_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Offre 1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5pt"
+                    android:layout_marginLeft="20pt"
+                    android:layout_marginRight="20pt"
+                    android:layout_marginTop="5pt"
+                    android:background="@drawable/line" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginTop="4pt"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profil search"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="10pt"
+                    android:id="@+id/profilSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Offre 1"
+                    android:layout_marginBottom="5pt"
+                    />
+
+
+            </LinearLayout>
+        </FrameLayout>
+        ​
+
+        <FrameLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="40pt"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/companyIcon"
+                        android:layout_width="30pt"
+                        android:layout_height="30pt"
+                        android:paddingTop="10pt"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tour_effel" />
+
+                    <TextView
+                        android:id="@+id/salary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="20pt"
+                        android:text="33000$"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="paris"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10pt">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/jobTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10pt"
+                                android:gravity="center"
+                                android:text="Offre 1"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/companyTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5pt"
+                                android:gravity="left"
+                                android:text="Forsyslab"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Residence ZARRAD,jardin du lac"
+                            android:textColor="@color/gris"
+                            android:textSize="5pt" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5pt">
+
+                            <LinearLayout
+                                android:id="@+id/withdraw"
+                                android:layout_width="25pt"
+                                android:layout_height="30pt"
+                                android:layout_alignParentLeft="true"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/noIntersted"
+                                    android:layout_width="15pt"
+                                    android:layout_height="15pt"
+                                    android:src="@drawable/ic_clear" />
+
+                                <TextView
+                                    android:layout_width="25pt"
+                                    android:layout_height="15pt"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="Withdraw"
+                                    android:textColor="@color/blue"
+                                    android:textSize="5pt" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/saveforlater"
+                                android:layout_width="34pt"
+                                android:layout_height="30pt"
+                                android:layout_centerHorizontal="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_gravity="center"
+                                    android:layout_width="15pt"
+                                    android:layout_height="15pt"
+                                    android:src="@drawable/ic_star" />
+                                <TextView
+                                    android:layout_width="34pt"
+                                    android:layout_height="15pt"
+                                    android:text="Save for later"
+                                    android:textColor="@color/blue"
+                                    android:textSize="5pt" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/refer"
+                                android:layout_width="25pt"
+                                android:layout_height="30pt"
+                                android:layout_alignParentRight="true"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="15pt"
+                                    android:layout_height="15pt"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/referrer" />
+
+                                <TextView
+                                    android:layout_width="25pt"
+                                    android:layout_height="15pt"
+                                    android:text="Refer"
+                                    android:textColor="@color/blue"
+                                    android:textSize="5pt" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </FrameLayout>
+        ​
+    </com.ramotion.foldingcell.FoldingCell>
+-->
+
+</LinearLayout>

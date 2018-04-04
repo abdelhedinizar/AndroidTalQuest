@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyDatePickerStyle" parent="@style/Material.Widget.DatePicker.Light">
+        <item name="android:headerBackground">@color/blueciel</item>
+        <item name="android:minDate">01/01/2000</item>
+        <item name="android:calendarTextColor">@color/grisa</item>
+    </style>
+</resources>
